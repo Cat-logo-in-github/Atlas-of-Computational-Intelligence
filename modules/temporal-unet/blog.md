@@ -603,7 +603,7 @@ Conceptually:
 
 This gives the detector several slightly different views of the same image.
 
-[Figure: A four-panel illustration showing the original volume, X-flipped volume, Y-flipped volume, and XY-flipped volume converging into averaged detection logits.](assets/tta_flips.png)
+![](assets/tta_flips.png)
 
 ---
 
@@ -1711,7 +1711,7 @@ edges between consecutive frames
 
 into one graph.
 
-[Figure: A timeline animation showing windows sliding across frames 0–6, with each window producing detections and an edge set, followed by those pieces accumulating into one global tracking graph.](assets/global_graph_accumulation.mp4)
+![](assets/global_graph_accumulation.mp4)
 
 ---
 
@@ -2008,7 +2008,7 @@ The whole system can be reduced to one diagram:
                        .GEFF
 ```
 
-[Figure: A clean end-to-end pipeline diagram showing the transformation from raw 4D microscopy data into U-Net features, detected cell nodes, transformer-predicted edges, and the final tracking graph.](assets/Pipeline-overview.jpg)
+![](assets/Pipeline-overview.jpg)
 
 The key idea is therefore:
 

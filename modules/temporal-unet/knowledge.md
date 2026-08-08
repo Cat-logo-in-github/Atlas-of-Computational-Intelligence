@@ -77,7 +77,7 @@ A useful way to think about the pipeline is:
               .geff output
 ```
 
-[Figure: End-to-end pipeline diagram showing the flow from Zarr microscopy data through preprocessing, TemporalUNet3D, cell detection, transformer-based linking, graph construction, optional ILP optimization, and `.geff` output](assets/Pipeline-detailed.png)
+![](assets/Pipeline-detailed.png)
 
 The key architectural separation is:
 
@@ -343,7 +343,7 @@ This distinction is fundamental.
 > The U-Net produces a dense field.
 > The tracking pipeline later turns that field into discrete cell nodes.
 
-[Figure: Example 3D microscopy volume alongside the corresponding U-Net feature volume and detection-logit volume, illustrating that the network initially produces dense spatial fields rather than explicit cell objects](assets/raw_unet_features_detection.png)
+![](assets/raw_unet_features_detection.png)
 
 ---
 
@@ -809,7 +809,7 @@ This prevents the same frame's detections or the same consecutive frame pair fro
 
 Thus the temporal window provides context while the final node/edge registry remains global to the video.
 
-[Figure: Sliding-window animation showing frames entering and leaving the Temporal U-Net window, with detections reused and each consecutive frame pair linked exactly once](assets/sliding_window_tracking.mp4)
+![](assets/sliding_window_tracking.mp4)
 
 ---
 
@@ -1201,7 +1201,7 @@ PAIRWISE TEMPORAL SCORES
 TRACKING GRAPH
 ```
 
-[Figure: Three-level conceptual illustration: dense image volume → discrete cell nodes → temporal graph, emphasizing the change from continuous representation to objects to relationships](assets/dense_to_cells_to_graph.png)
+![](assets/dense_to_cells_to_graph.png)
 
 ---
 
