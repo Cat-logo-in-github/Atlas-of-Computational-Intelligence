@@ -42,58 +42,15 @@ Which is where the notebook above loads it's model from.
 
 So our first foray will be into the same lane. We will look at the working of this repository.
 
-### What Intuition tells us the Pipeline can be
+### Files to Explore the repository
 
-Dataset
-        ↓
-Load zarr images
-        ↓
-Extract cell coordinates
-        ↓
-Create frame windows
-        ↓
-Temporal UNet
-        ↓
-Feature maps
-        ↓
-Index features at node locations
-        ↓
-Add positional embeddings
-        ↓
-Transformer
-        ↓
-Edge prediction
-        ↓
-Loss
-        ↓
-Backprop
+* [Image Preprocessing]()
+* [Temporal Unet]()
+* [Simple Node Transformer]()
+* [Graph Construction]()
+* [Complete Pipeline Analysis]()
 
-### Let us first understand the models
 
-[]()
-
-3D Frame t        3D Frame t+1
-      │                 │
-      └──── Temporal UNet ────┘
-                │
-     Dense voxel feature maps
-                │
-      Sample features at detected
-         cell coordinates
-                │
-      + Positional embeddings
-                │
-      Source nodes     Target nodes
-            │               │
-            └── Cross-attention ──┘
-                    │
-         Pair every source with every target
-                    │
-      [source, target, Δposition]
-                    │
-               Pair MLP
-                    │
-          Edge score (logit)
 
 ## Quiz
 

@@ -5,9 +5,11 @@ status: seed
 difficulty: beginner
 created: '2026-08-08T15:21:37.027220'
 updated: false
-last_build: '2026-08-08T19:37:00.692952'
-content_hash: ''
-tags: []
+last_build: '2026-08-12T14:47:23.881608'
+content_hash: 101f3116343ee73b4e66ddd3ceec4f53c758e5a713e9308a58615cb926b8e2b3
+tags:
+- optimization
+- machine-learning
 related: []
 outputs:
   quiz:
