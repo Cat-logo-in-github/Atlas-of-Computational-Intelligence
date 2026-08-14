@@ -1,0 +1,30 @@
+title: Simple Node Transformer
+slug: simple-node-transformer
+module: ''
+status: seed
+difficulty: beginner
+created: '2026-08-11T21:25:51.020183'
+updated: false
+last_build: '2026-08-12T14:47:23.600777'
+content_hash: 21ce73b62773c903d651a6e5a29096c0d90ee09fff5d34a2d091e78befe6d3b8
+tags: []
+related: []
+outputs:
+  quiz:
+    published: true
+  website:
+    published: false
+  youtube:
+    published: false
+    url: ''
+  instagram:
+    published: false
+    url: ''
+  blog:
+    published: false
+    url: ''
+  notebook:
+    published: false
+  simulation:
+    published: false
+    build: false

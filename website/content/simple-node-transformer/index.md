@@ -1408,3 +1408,8 @@ The final conversion from candidate relationships into a graph is covered in [Gr
 > **The U-Net describes the cell; positional encoding describes where it is; the transformer uses both to predict temporal relationships.**
 
 
+
+## External Links
+
+- [YouTube](https://youtu.be/ROhOimSd62g?si=_S30n0XFQvtvXY3d)
+- [Instagram](https://www.instagram.com/reel/DcA6ItGTloo/?igsh=NWhmeWw3dTBlMWM0&igsi=NWhmeWw3dTBlMWM0)

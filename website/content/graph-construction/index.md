@@ -1607,3 +1607,8 @@ The central idea is:
 
 > **A tracking graph is not produced directly by the neural network. The neural network supplies node detections and edge compatibility scores; graph construction turns those predictions into a structurally valid temporal graph.**
 
+
+## External Links
+
+- [YouTube](https://youtu.be/bmkLh7Sit1E?si=mwZTHHm67y7ukwVo)
+- [Instagram](https://www.instagram.com/reel/DcBAfhzTXzC/?igsh=OW1rMmFlcnJsNGhl&igsi=OW1rMmFlcnJsNGhl)

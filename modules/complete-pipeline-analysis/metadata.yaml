@@ -1,0 +1,30 @@
+title: Complete pipeline analysis
+slug: complete-pipeline-analysis
+module: ''
+status: seed
+difficulty: beginner
+created: '2026-08-11T21:26:21.944454'
+updated: false
+last_build: '2026-08-12T14:47:23.412821'
+content_hash: c964735902abcbb46699af0dbbd57e9a4df3f32085979d185bd3946b84b810f8
+tags: []
+related: []
+outputs:
+  quiz:
+    published: true
+  website:
+    published: false
+  youtube:
+    published: false
+    url: ''
+  instagram:
+    published: false
+    url: ''
+  blog:
+    published: false
+    url: ''
+  notebook:
+    published: false
+  simulation:
+    published: false
+    build: false

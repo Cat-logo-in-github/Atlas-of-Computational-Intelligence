@@ -1,0 +1,30 @@
+title: Graph Construction
+slug: graph-construction
+module: ''
+status: seed
+difficulty: beginner
+created: '2026-08-11T21:26:06.587533'
+updated: false
+last_build: '2026-08-12T14:47:23.481229'
+content_hash: 459560396b886eb6e0eb0457b8f4f1b381cb666283c8373eb878ab361d72dbee
+tags: []
+related: []
+outputs:
+  quiz:
+    published: true
+  website:
+    published: false
+  youtube:
+    published: false
+    url: ''
+  instagram:
+    published: false
+    url: ''
+  blog:
+    published: false
+    url: ''
+  notebook:
+    published: false
+  simulation:
+    published: false
+    build: false

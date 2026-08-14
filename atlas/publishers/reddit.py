@@ -735,10 +735,26 @@ def publish_reddit(
 
         for image in content["images"]:
 
-            upload_image(
-                page,
-                image
-            )
+            try:
+
+                upload_image(
+                    page,
+                    image
+                )
+
+            except Exception as e:
+
+                print(
+                    "⚠ Skipping image:",
+                    image
+                )
+
+                print(
+                    "  Reason:",
+                    e
+                )
+
+                continue
 
 
 

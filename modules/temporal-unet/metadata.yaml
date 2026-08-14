@@ -5,8 +5,8 @@ status: seed
 difficulty: beginner
 created: '2026-08-08T15:21:37.027220'
 updated: false
-last_build: '2026-08-12T14:47:23.881608'
-content_hash: 101f3116343ee73b4e66ddd3ceec4f53c758e5a713e9308a58615cb926b8e2b3
+last_build: '2026-08-14T14:34:35.198288'
+content_hash: 215cbf976c266cc5454f88e726aba74461f9dc053655bdb659888702e3d30067
 tags:
 - optimization
 - machine-learning
@@ -17,11 +17,11 @@ outputs:
   website:
     published: false
   youtube:
-    published: false
-    url: ''
+    published: true
+    url: https://youtu.be/AwFWO0tRPN4?si=Q1ixZndm_vo2px8C
   instagram:
-    published: false
-    url: ''
+    published: true
+    url: https://www.instagram.com/reel/DcA4KVLz4Or/?igsh=MWY3ZHBhYjJ4aHdxbA==&igsi=MWY3ZHBhYjJ4aHdxbA==
   blog:
     published: false
     url: ''

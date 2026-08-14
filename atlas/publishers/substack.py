@@ -144,18 +144,24 @@ def markdown_to_blocks(md):
 # ------------------------------------------------------------
 
 def copy_image_to_clipboard(image_path: Path):
-    """
-    Copies PNG/JPEG as bitmap data to Windows clipboard.
 
-    Requires:
-        Pillow
-        pywin32
-    """
+    try:
+        image = Image.open(image_path)
+        image = image.convert("RGB")
 
-    image = Image.open(image_path)
+    except Exception as exc:
 
-    image = image.convert("RGB")
+        print(
+            "Skipping unreadable image:",
+            image_path
+        )
 
+        print(
+            "Reason:",
+            exc
+        )
+
+        return False
 
     output = io.BytesIO()
 
@@ -164,13 +170,12 @@ def copy_image_to_clipboard(image_path: Path):
         "BMP"
     )
 
-
     data = output.getvalue()[14:]
-    
 
     win32clipboard.OpenClipboard()
 
     try:
+
         win32clipboard.EmptyClipboard()
 
         win32clipboard.SetClipboardData(
@@ -179,7 +184,10 @@ def copy_image_to_clipboard(image_path: Path):
         )
 
     finally:
+
         win32clipboard.CloseClipboard()
+
+    return True
 
 
 
@@ -264,24 +272,42 @@ def paste_image(page, editor, image_path):
         image_path
     )
 
+    # Count images already present in the editor
+    before = editor.locator("img").count()
+
     copy_image_to_clipboard(
         image_path
     )
 
-
-    # editor.click()
+    editor.click(
+        force=True
+    )
 
     page.keyboard.press(
         "Control+V"
     )
 
+    # Wait for Substack to actually insert the image.
+    for _ in range(30):
 
-    #
-    # Temporary wait.
-    # Replace with Substack upload detection
-    # after inspecting DOM.
-    #
-    time.sleep(2)
+        page.wait_for_timeout(500)
+
+        after = editor.locator("img").count()
+
+        if after > before:
+
+            print(
+                f"Image inserted: {image_path.name}"
+            )
+
+            # Give Substack time to finish the upload/render.
+            page.wait_for_timeout(1500)
+
+            return
+
+    print(
+        f"WARNING: Substack did not visibly insert {image_path.name}"
+    )
 
 
 
@@ -403,15 +429,35 @@ def publish_substack(module_name: str):
                 continue
 
 
-            paste_image(
+            if image_path.suffix.lower() not in {
+                ".png",
+                ".jpg",
+                ".jpeg",
+                ".webp",
+                ".gif",
+            }:
+
+                print(
+                    "Skipping non-image asset:",
+                    image_path
+                )
+
+                continue
+
+
+            pasted = paste_image(
                 page,
                 editor,
                 image_path
             )
 
+            if not pasted:
+                continue
+
+
             move_cursor_to_end(editor)
 
-            page.wait_for_timeout(200)
+            page.wait_for_timeout(1000)
 
 
     print(

@@ -82,6 +82,7 @@ The goal is to document:
 - technical understanding
 - curiosity
 
+Make posts like a student/researcher really passionate babout the idea
 
 Topic:
 {module.title}

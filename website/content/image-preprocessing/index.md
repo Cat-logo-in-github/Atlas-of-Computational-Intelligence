@@ -1307,3 +1307,8 @@ It does **not** decide which cells are connected.
 That responsibility begins after the image has passed through the [Temporal U-Net](../temporal-unet/knowledge.md), where dense detection fields and learned feature maps are converted into cell nodes.
 
 
+
+## External Links
+
+- [YouTube](https://youtu.be/rgkwzpssq7A?si=MSi-yeAjbTLcqTJF)
+- [Instagram](https://www.instagram.com/reel/DcA22-VzzMi/?igsh=ZDRtZjQyeGRsdHM3&igsi=ZDRtZjQyeGRsdHM3)

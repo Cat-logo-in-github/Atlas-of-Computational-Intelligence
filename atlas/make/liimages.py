@@ -118,38 +118,56 @@ Concept to illustrate:
 Create a single clean visual representation.
 """
 
-
     encoded = urllib.parse.quote(
         full_prompt
     )
 
-
     url = (
         "https://image.pollinations.ai/prompt/"
-        +
-        encoded
-        +
-        "?width=1024&height=576"
+        + encoded
+        + "?width=1024&height=576"
     )
-
 
     print(
         "Requesting image..."
     )
 
+    for attempt in range(3):
 
-    response = requests.get(
-        url,
-        timeout=180
+        try:
+
+            response = requests.get(
+                url,
+                timeout=180
+            )
+
+            response.raise_for_status()
+
+            output.write_bytes(
+                response.content
+            )
+
+            return True
+
+        except requests.RequestException as e:
+
+            print(
+                f"Image request failed "
+                f"(attempt {attempt + 1}/3): {e}"
+            )
+
+            if attempt < 2:
+
+                time.sleep(
+                    5 * (attempt + 1)
+                )
+
+    print(
+        f"Skipping image generation: {output}"
     )
 
+    return False
 
-    response.raise_for_status()
-
-
-    output.write_bytes(
-        response.content
-    )
 
 
 
@@ -311,21 +329,29 @@ def generate_module_liimages(
             )
 
 
-            generate_image(
+            success = generate_image(
                 prompt,
                 output
             )
 
+            if success:
 
-            print(
-                "Saved:",
-                output
-            )
+                print(
+                    "Saved:",
+                    output
+                )
 
+                time.sleep(
+                    3
+                )
 
-            time.sleep(
-                3
-            )
+            else:
+
+                print(
+                    "Image generation failed:",
+                    output
+                )
+
 
 
 

@@ -91,7 +91,9 @@ def publish_module(module_name):
 
 
     run_git(
-        "push"
+        "push",
+        "origin",
+        "HEAD"
     )
 
 

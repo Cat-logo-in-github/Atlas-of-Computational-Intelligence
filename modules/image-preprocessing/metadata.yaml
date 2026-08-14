@@ -1,0 +1,30 @@
+title: Image Preprocessing
+slug: image-preprocessing
+module: ''
+status: seed
+difficulty: beginner
+created: '2026-08-11T21:25:31.771719'
+updated: false
+last_build: '2026-08-12T14:47:23.500061'
+content_hash: ac95a7a6f2c9a7f86676c681ee90bbb0f890ba32fa249a28c9ebbf7d69baa6cf
+tags: []
+related: []
+outputs:
+  quiz:
+    published: true
+  website:
+    published: false
+  youtube:
+    published: false
+    url: ''
+  instagram:
+    published: false
+    url: ''
+  blog:
+    published: false
+    url: ''
+  notebook:
+    published: false
+  simulation:
+    published: false
+    build: false

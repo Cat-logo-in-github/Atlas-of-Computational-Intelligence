@@ -1,0 +1,30 @@
+title: Biohub Kaggle competition pipeline
+slug: biohub-kaggle-competition-pipeline
+module: ''
+status: seed
+difficulty: beginner
+created: '2026-08-07T23:26:27.614327'
+updated: false
+last_build: '2026-08-12T14:47:23.383016'
+content_hash: bee95a89285438484cd1ebaf6636938c2797be7b2ca43f96b1a91d8c2222c9b3
+tags: []
+related: []
+outputs:
+  quiz:
+    published: true
+  website:
+    published: false
+  youtube:
+    published: false
+    url: ''
+  instagram:
+    published: false
+    url: ''
+  blog:
+    published: false
+    url: ''
+  notebook:
+    published: false
+  simulation:
+    published: false
+    build: false
