@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: cat-logo-in-github.github.io/ml-pipeline-deep-dives
+  baseUrl: cat-logo-in-github.github.io/Atlas-of-Computational-Intelligence
   ignorePatterns:
     - private
     - templates
