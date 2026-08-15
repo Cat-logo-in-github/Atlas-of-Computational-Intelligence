@@ -27,15 +27,30 @@ jobs:
         working-directory: website
         run: npm ci
 
-      - name: Build Quartz
+            - name: Build Quartz
         working-directory: website
         run: npx quartz build
+
+      - name: Inspect generated site
+        working-directory: website
+        run: |
+          echo "===== SEARCHING GENERATED SITE ====="
+          grep -Ril \
+            -e "Biohub Kaggle competition pipeline" \
+            -e "Complete pipeline analysis" \
+            -e "Graph Construction" \
+            -e "Image Preprocessing" \
+            -e "Simple Node Transformer" \
+            -e "Temporal UNet" \
+            public || true
+
+          echo "===== GENERATED FILE COUNT ====="
+          find public -type f | wc -l
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: website/public
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
