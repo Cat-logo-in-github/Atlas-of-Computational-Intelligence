@@ -1,4 +1,4 @@
-# Atlas Blog
+# Machine Learning Pipelines Blogs
 
 ## Articles
 

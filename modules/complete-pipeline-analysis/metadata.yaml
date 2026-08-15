@@ -15,11 +15,11 @@ outputs:
   website:
     published: false
   youtube:
-    published: false
-    url: ''
+    published: true
+    url: 'https://youtu.be/5xrjoWvjq8g?si=fvXdkC1-87t2RcTR'
   instagram:
-    published: false
-    url: ''
+    published: true
+    url: 'https://www.instagram.com/reel/DcBDw8yzTBX/?igsh=MW5tNzZubnNrbDNhcQ==&igsi=MW5tNzZubnNrbDNhcQ=='
   blog:
     published: false
     url: ''

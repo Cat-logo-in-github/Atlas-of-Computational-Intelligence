@@ -462,7 +462,7 @@ SOURCE: {module.blog}
 def build_index(modules):
 
     lines = [
-        "# Atlas of Intelligence\n\n",
+        "# Atlas of Machine Learning Pipelines\n\n",
         "## Modules\n\n"
     ]
 
@@ -496,7 +496,7 @@ def build_index(modules):
 def build_blog_index(modules):
 
     lines = [
-        "# Atlas Blog\n\n",
+        "# Machine Learning Pipelines Blogs\n\n",
         "## Articles\n\n"
     ]
 

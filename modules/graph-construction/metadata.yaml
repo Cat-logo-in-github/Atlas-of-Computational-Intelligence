@@ -5,8 +5,8 @@ status: seed
 difficulty: beginner
 created: '2026-08-11T21:26:06.587533'
 updated: false
-last_build: '2026-08-12T14:47:23.481229'
-content_hash: 459560396b886eb6e0eb0457b8f4f1b381cb666283c8373eb878ab361d72dbee
+last_build: '2026-08-14T14:34:34.447574'
+content_hash: f8f014d92d1cdd382252631398e7c9edf6204f3deb8c55133a31e14c2718cbeb
 tags: []
 related: []
 outputs:
@@ -15,11 +15,11 @@ outputs:
   website:
     published: false
   youtube:
-    published: false
-    url: ''
+    published: true
+    url: https://youtu.be/bmkLh7Sit1E?si=mwZTHHm67y7ukwVo
   instagram:
-    published: false
-    url: ''
+    published: true
+    url: https://www.instagram.com/reel/DcBAfhzTXzC/?igsh=OW1rMmFlcnJsNGhl&igsi=OW1rMmFlcnJsNGhl
   blog:
     published: false
     url: ''

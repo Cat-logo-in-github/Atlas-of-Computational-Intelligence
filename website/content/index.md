@@ -1,4 +1,4 @@
-# Atlas of Intelligence
+# Atlas of Machine Learning Pipelines
 
 ## Modules
 
