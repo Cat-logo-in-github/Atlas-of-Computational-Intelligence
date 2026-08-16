@@ -1,385 +1,869 @@
-# Atlas:A personal knowledge system for turning learning into structured content and automating publishing pipelines.
+# Atlas of Computational Intelligence
 
-CLI:
+> **What is intelligence?**
 
-![alt text](images/image-4.png)
+This is a long-term attempt to answer that question.
 
-# Why Atlas?
+Not by defining intelligence once, but by approaching it from many directions:
 
-Modern learning produces fragmented information:
+**Machine Learning. · Reinforcement Learning. · Mathematics. · Neuroscience. · Cognitive Psychology. · Computation. · Experiments.**
 
-- Notes are disconnected
-- Research is difficult to organize
-- Simulations and visualizations are separate from explanations
-- Publishing knowledge requires repeated manual work
+The central idea is simple:
 
-Atlas creates a pipeline where learning becomes structured, visual, and shareable.
-Atlas is a framework for organizing knowledge, simulating (read CONTRACTmd to learn what a simulation is) visuals and publishing said knowledge.
+> **Intelligence is not one thing.**
 
-It transforms:
+It may emerge from the interaction of **representation, learning, memory, optimization, uncertainty, prediction, decision-making, and interaction with the world**.
 
+This repository is an attempt to understand those pieces individually—and, more importantly, understand **how they fit together**.
+
+---
+
+# The Question
+
+Most discussions of intelligence eventually become philosophical.
+
+This project tries to make the question computational.
+
+```text
+                         INTELLIGENCE
+                              │
+          ┌───────────────────┼───────────────────┐
+          │                   │                   │
+   Representation         Learning        Decision Making
+          │                   │                   │
+       Memory            Optimization          Planning
+          │                   │                   │
+     Prediction        Generalization       Exploration
+          │                   │                   │
+     Neural Nets             RL             Neuroscience
+          │                   │                   │
+          └───────────────────┼───────────────────┘
+                              │
+                       Open Problems
 ```
-                    Idea / Question
-                           ↓
-                    Knowledge Module (all user puts effort into)
-                           ↓
-                    AI powered automation Pipeline
-                           ↓
-              ┌────────────┴────────────┐
-              ↓                         ↓
-       Narrative Content          Simulation
-              ↓                         ↓
-       Blog + Social Posts       Interactive Assets
-              └────────────┬────────────┘
-                           ↓
-                    Atlas Website
-                           ↓
-                 Automated Distribution
+
+The goal isn't to prove that one of these is *the* explanation for intelligence.
+
+It is to investigate whether intelligence can be better understood as the **interaction of these mechanisms**.
+
+---
+
+# The Questions
+
+The Atlas will gradually work through questions such as:
+
+1. **What is intelligence?**
+2. **What information does an intelligent system perceive?**
+3. **How is that information represented?**
+4. **How is it remembered?**
+5. **How does it learn?**
+6. **How does it decide?**
+7. **How does it improve?**
+8. **How does it generalize?**
+9. **How do biological and artificial intelligence compare?**
+10. **What remains unsolved?**
+
+And then the questions become less tidy:
+
+* How do we learn?
+* Why do we forget?
+* How do we recognize faces?
+* How do we decide?
+* Can machines imagine?
+* Why do humans make mistakes?
+* Can intelligence exist without memory?
+* What is curiosity?
+* What is consciousness?
+* Why do we explore?
+* How do we know what is true?
+* Can intelligence emerge from randomness?
+
+There may not be clean answers.
+
+That's part of the point.
+
+---
+
+# How I Want to Explore These Questions
+
+A question should not stop at a paragraph of explanation.
+
+The ideal path is:
+
+```text
+                    Question
+                       ↓
+                 Short intuition
+                       ↓
+                   Mathematics
+                       ↓
+                     Code
+                       ↓
+              Interactive simulation
+                       ↓
+                  Visualization
+                       ↓
+                      Blog
+                       ↓
+              10-minute YouTube video
+                       ↓
+                 Further reading
+                       ↓
+                   Connections
+```
+
+Different questions will reach different stages.
+
+Some may remain a notebook.
+
+Some may become an experiment.
+
+Some may eventually become a full research-style exploration.
+
+---
+
+# From Seed to Forest
+
+Not every idea needs to become a giant project.
+
+I want the repository to grow organically.
+
+### 🌱 Seed
+
+A question, a short explanation, and a notebook.
+
+```text
+question
+   +
+intuition
+   +
+experiment
+```
+
+### 🌿 Sapling
+
+Add a visualization and a cleaned-up explanation.
+
+```text
+question
+   +
+math
+   +
+code
+   +
+visualization
+   +
+write-up
+```
+
+### 🌳 Tree
+
+Turn the idea into a complete exploration.
+
+```text
+question
+   ↓
+mathematics
+   ↓
+implementation
+   ↓
+simulation
+   ↓
+visual explanation
+   ↓
+blog
+```
+
+### 🌲 Forest
+
+Connect the idea to the larger map.
+
+```text
+research papers
+      +
+YouTube explanation
+      +
+related modules
+      +
+experiments
+      +
+biological connections
+      +
+open questions
+```
+
+A module doesn't need to become a Forest.
+
+**The goal is depth where depth is warranted.**
+
+---
+
+# The Areas
+
+The Atlas is organized around several recurring ideas rather than treating ML, neuroscience, and psychology as completely separate subjects.
+
+## Representation
+
+How does an intelligent system represent the world?
+
+Topics might include:
+
+* Linear algebra
+* PCA
+* Feature engineering
+* Embeddings
+* Neural representations
+* Neuroscience
+* Symbolic representations
+
+```text
+Representation
+│
+├── PCA
+├── Linear Algebra
+├── Neuroscience
+└── Feature Engineering
 ```
 
 ---
 
-# What is Atlas?
+## Learning
 
-Most knowledge systems focus on storing information.
+How does a system change when it encounters experience?
 
-Atlas focuses on building understanding and coherant narratives.
+Topics might include:
 
-Instead of disconnected notes, Atlas creates structured knowledge modules that combine:
+* Regression
+* Statistics
+* Decision trees
+* Neural networks
+* Gradient-based learning
+* Hebbian learning
+* Plasticity
 
-- Explanations
-- Research
-- Simulations
-- Visualizations
-- Published documentation
-- Engaging social media content
-
-Each module becomes a self-contained piece of knowledge.
+```text
+Learning
+│
+├── Regression
+├── Decision Trees
+├── Neural Networks
+└── Statistics
+```
 
 ---
 
-# Features
+## Optimization
 
-## Knowledge Modules
+How does an intelligent system improve?
 
-Atlas organizes knowledge into independent modules.
+Topics might include:
 
-A module can represent:
+* Multivariable calculus
+* Gradient descent
+* Loss functions
+* Optimization landscapes
+* Evolutionary optimization
+* Credit assignment
 
-- Scientific concepts
-- Engineering topics
-- Algorithms
-- Biological systems
-- Mathematical ideas
-- Personal research
-
-Example:
-
+```text
+Optimization
+│
+└── Multivariable Calculus
+    └── Gradient Descent
 ```
-module-name/
 
-├── knowledge.md
+---
+
+## Decision Making
+
+How does an agent choose what to do?
+
+Topics might include:
+
+* Markov chains
+* Markov decision processes
+* Dynamic programming
+* Q-learning
+* Planning
+* Exploration
+* Exploitation
+
+```text
+Decision Making
 │
-├── blog.md
+├── Markov Chains
+├── MDPs
+└── Q Learning
+```
+
+---
+
+## Generalization
+
+How does an intelligent system go beyond what it has seen?
+
+Topics might include:
+
+* PAC learning
+* Bias and variance
+* Inductive biases
+* Distribution shift
+* Research methodology
+* Transfer learning
+
+```text
+Generalization
 │
-├── notebook.ipynb (optional for ppl who like coding)
+├── PAC Learning
+├── Bias / Variance
+└── Research Methods
+```
+
+---
+
+## Biological Intelligence
+
+What can biology teach us about intelligence?
+
+Topics might include:
+
+* Hippocampus
+* Memory
+* Plasticity
+* Emotion
+* Attention
+* Prediction
+* Decision making
+* Neural circuits
+
+```text
+Biological Intelligence
 │
-├── simulation/
+├── Hippocampus
+├── Plasticity
+├── Emotion
+└── Memory
+```
+
+The goal isn't to assume that brains are simply biological neural networks.
+
+The interesting question is where the analogy **breaks**.
+
+---
+
+# Questions I Want to Investigate
+
+The repository will be driven by questions rather than a fixed curriculum.
+
+Some early examples:
+
+| #   | Question                                      |
+| --- | --------------------------------------------- |
+| 001 | Why does gradient descent work?               |
+| 002 | Can Hebbian learning replace backpropagation? |
+| 003 | Why does PCA preserve variance?               |
+| 004 | Why is dopamine similar to TD learning?       |
+| 005 | Why are transformers not recurrent?           |
+
+More questions will emerge as the project develops.
+
+The questions are intentionally broad.
+
+A question like **"Why does gradient descent work?"** can lead from calculus → optimization → learning → neural networks → biological learning → credit assignment.
+
+That is exactly the kind of connection this Atlas is interested in.
+
+---
+
+# The Map
+
+The eventual structure should look less like a textbook and more like a network.
+
+```text
+                         INTELLIGENCE
+                              │
+              ┌───────────────┼───────────────┐
+              │               │               │
+        REPRESENTATION      LEARNING      DECISION MAKING
+              │               │               │
+              │               │               │
+           Memory        Optimization       Planning
+              │               │               │
+              │               │               │
+        Prediction      Generalization     Exploration
+              │               │               │
+              └───────────────┼───────────────┘
+                              │
+                       Neural Networks
+                              │
+                              RL
+                              │
+                       Neuroscience
+                              │
+                              ↓
+                       OPEN PROBLEMS
+```
+
+But this isn't meant to be a hierarchy.
+
+It's a **graph**.
+
+Representation affects learning.
+
+Learning changes representations.
+
+Memory affects decision-making.
+
+Optimization drives learning.
+
+Uncertainty affects exploration.
+
+Neuroscience challenges assumptions made by artificial systems.
+
+Reinforcement learning connects learning, prediction, reward, and action.
+
+And new connections will appear as the Atlas grows.
+
+> **Click anything. Everything is connected.**
+
+---
+
+# The Computational Approach
+
+Whenever possible, I want ideas to be explored at multiple levels.
+
+```text
+THE BIG QUESTION
+       ↓
+   Mental Model
+       ↓
+ Real-world Example
+       ↓
+      Math
+       ↓
+   Algorithm
+       ↓
+   Simulation
+       ↓
+ Neuroscience
+       ↓
+   Research
+       ↓
+Implementation
+```
+
+For example:
+
+**Why does gradient descent work?**
+
+could become:
+
+```text
+What does "learning" mean?
+        ↓
+What is an objective function?
+        ↓
+Why does the gradient point somewhere useful?
+        ↓
+What happens on different loss landscapes?
+        ↓
+Implement gradient descent
+        ↓
+Visualize the optimization path
+        ↓
+Connect it to neural networks
+        ↓
+Compare with biological learning
+        ↓
+Ask what gradient descent does NOT explain
+```
+
+The mathematics is not decoration.
+
+The code is not decoration.
+
+The neuroscience is not decoration.
+
+Each is another lens on the same question.
+
+---
+
+# Research Notes
+
+Some explorations will begin as rough notes.
+
+That is intentional.
+
+A research notebook might contain:
+
+```text
+Today I learned...
+
+I don't understand...
+
+This reminds me of...
+
+Possible project...
+
+Paper to read...
+
+Connection to another idea...
+```
+
+Not everything needs to be polished immediately.
+
+The Atlas is allowed to contain unfinished thoughts.
+
+In fact, some of the most interesting questions will probably begin there.
+
+---
+
+# Weekly Journal
+
+The `weekly-journal/` directory is where the learning process itself can be recorded.
+
+The format is deliberately simple:
+
+```text
+Today I learned...
+
+I don't understand...
+
+This reminds me of...
+
+Possible project...
+
+Paper to read...
+```
+
+The journal isn't the finished product.
+
+It is the **raw material from which modules emerge**.
+
+---
+
+# Repository Structure
+
+The structure will evolve as the project does.
+
+The current intended organization is:
+
+```text
+Atlas-of-Computational-Intelligence/
+
+├── README.md
 │
+├── 00_foundations/
+├── 01_learning/
+├── 02_memory/
+├── 03_decision-making/
+├── 04_representation/
+├── 05_optimization/
+├── 06_uncertainty/
+├── 07_neural-networks/
+├── 08_reinforcement-learning/
+├── 09_brain/
+├── 10_research-notes/
+│
+├── questions/
+│   ├── 001.md
+│   ├── 002.md
+│   └── ...
+│
+├── simulations/
+├── papers/
+├── videos/
+├── blog/
 ├── assets/
-│
-└── metadata
+└── weekly-journal/
 ```
+
+The numbered directories provide a rough map.
+
+They are **not prerequisites** and they are not meant to become a rigid course.
+
+A question can jump across several areas.
 
 ---
 
-## AI Research-Simulation Pipeline
+# The Knowledge Object
 
-Atlas includes an AI-assisted simulation workflow that help turn an idea eg: 'a graph of all visual information processing parts of the brain' into an interactive visual you can incorporate in your website.
+The smallest useful unit in the Atlas is not a chapter.
 
-**Supported outputs:**
-- Figures
-- Graphs
-- Animations
-- Datasets
-- Interactive models
+It's a **question**.
 
-The pipeline:
+For example:
 
-```
-Scientific/ Research Idea
-    ↓
-Research Agent (atlas make research)
-    ↓
-Structured Simulation guide (atlas make simulation)
-    ↓
-Coressponding interactive visual generated
+```text
+questions/
+└── 001-why-does-gradient-descent-work/
 ```
 
-Simulations are Atlas-managed experiments.
-They follow the Atlas simulation contract and are executed through the Atlas runtime:
-This allows Atlas to manage rendering, previews, and exports consistently.
+A mature question might eventually contain:
 
-Do not run simulations as regular python files.
-Use terminal command `atlas run module_name simulation_name` instead
+```text
+001-why-does-gradient-descent-work/
+
+├── question.md
+├── notes.md
+├── mathematics.md
+├── notebook.ipynb
+├── simulation/
+├── assets/
+├── references.bib
+├── blog.md
+└── video.md
+```
+
+But it doesn't have to start that way.
+
+It can begin as:
+
+```text
+question.md
+notebook.ipynb
+```
+
+and grow naturally.
 
 ---
 
-## Website Generation
+# The Atlas as a Knowledge Graph
 
-Atlas converts knowledge modules into a browsable website.
+Eventually, I want the connections between ideas to be as important as the ideas themselves.
 
-Workflow:
+For example:
 
+```text
+Gradient Descent
+       │
+       ├── Calculus
+       │
+       ├── Optimization
+       │
+       ├── Neural Networks
+       │
+       ├── Learning
+       │
+       └── Credit Assignment
+               │
+               ├── Reinforcement Learning
+               └── Neuroscience
 ```
-Module (atlas create)
-   ↓
-Build
-   ↓
-Published Knowledge Atlas
+
+And:
+
+```text
+Memory
+ │
+ ├── Hippocampus
+ │
+ ├── Representation
+ │
+ ├── Learning
+ │
+ ├── Generalization
+ │
+ └── Decision Making
 ```
 
-Generated websites contain:
-
-- Knowledge pages
-- Navigation
-- Index pages
-- Visualizations
-- Interactive content
+The interesting discoveries may happen **between modules**.
 
 ---
 
+# The Long-Term Vision
 
-## Content Generation
+I don't know exactly what this repository will look like at the end of the next semester.
 
-Atlas converts knowledge into posts, social media content, assets like images and quizzes.
+That's intentional.
 
-Workflow:
+This is not a project where the entire destination is known beforehand.
 
-```
-Module (atlas create)
-   ↓
-Generate Artifacts (raw coontent)
-   ↓
-Published Knowledge Atlas with content links creating a network of your socials
-```
+The semester may produce:
 
-Generated content contains:
+* notebooks
+* mathematical derivations
+* simulations
+* failed experiments
+* research notes
+* literature reviews
+* blog posts
+* videos
+* small implementations
+* unexpected connections
+* questions that turn out to be much harder than expected
 
-- LinkedIn Posts
-- Reddit/ Social Media posts
-- Youtube video outline
-- Instagram video script
-- Quiz
-- Images (for assets or social media content)
-- Interactive content
+Some ideas will die.
 
+Some will become small notes.
 
-# Installation: Note this repo works best on Windows machines. Others may need additional configuration that has not been provided
+Some might become months-long investigations.
 
-Clone the repository:
-
-```bash
-git clone https://github.com/Cat-logo-in-github/Atlas-Intelligence
-
-cd directory_name
-```
-
-Create a virtual environment:
-
-```bash
-python -m venv .venv
-```
-
-Activate it:
-
-Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-Linux/macOS:
-
-```bash
-source .venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-You'll also need to install Ollama Qwen 2.5b for the generation pipeline. Alternatively, you can change it to use your own model. But to just try as is refer to:
-
-https://ai-ollama.github.io/qwen-2-5.html
-
-Ensure Ollama is running and the model is listening to port 11434
-
-Further details will be shared later
----
-
-# Quick Start
-
-Create a module:
-
-```bash
-atlas create "write module_name here"
-```
-
-Generate research/simulation:
-
-```bash
-atlas make research
-```
-```bash
-atlas make simulation module_name
-```
-
-Generate content/posts:
-
-```bash
-atlas generate module_name
-```
-
-Build the website and start content publishing pipeline:
-
-```bash
-atlas publish module_name
-```
+The Atlas should accommodate all of them.
 
 ---
 
-# Summary
+# The Engine vs. The Atlas
 
+There is also a second problem hiding underneath this project:
+
+**How do you build a system that makes it easy to turn learning into durable knowledge?**
+
+Eventually, I may build tooling around the Atlas so that a new knowledge object can follow something like:
+
+```text
+New Knowledge Object
+        ↓
+    template.md
+        ↓
+   notebook.ipynb
+        ↓
+      images/
+        ↓
+      publish
+        ↓
+  ┌─────┼─────────┐
+  ↓     ↓         ↓
+Website Blog   Video
 ```
-Atlas
 
-├── Module System
-│
-├── Research-Simulation Pipeline
-│
-├── Content Generation Pipeline
-│
-├── Website Builder
-│
-└── Publishing System
-```
+The idea is to separate:
 
-## Module System
+**the knowledge I create**
 
-The core unit of knowledge.
+from
 
-Modules contain the information, experiments, and resources related to a topic.
+**the machinery used to publish it.**
 
-## Research-Simulation Engine
+But the tooling is secondary.
 
-A framework for creating computational models and visual explanations.
+The first priority is answering interesting questions.
 
-## Website Builder
-
-Transforms knowledge modules into a navigable website.
-
-## Publishing System
-
-Publishes content to help your content gain traction.
+If the publishing engine becomes useful, it can grow alongside the Atlas.
 
 ---
 
-# Philosophy
+# A Possible Future
 
-Atlas follows one principle:
+The ideal future state looks something like this:
 
-> Knowledge should be explored, not managed.
-
-The workflow:
-
+```text
+                         QUESTION
+                            │
+                            ↓
+                       EXPLORATION
+                            │
+            ┌───────────────┼───────────────┐
+            ↓               ↓               ↓
+           MATH            CODE         RESEARCH
+            │               │               │
+            └───────────────┼───────────────┘
+                            ↓
+                       EXPERIMENT
+                            │
+                            ↓
+                       SIMULATION
+                            │
+                            ↓
+                       EXPLANATION
+                            │
+             ┌──────────────┼──────────────┐
+             ↓              ↓              ↓
+           WEBSITE          BLOG         VIDEO
+             │              │              │
+             └──────────────┼──────────────┘
+                            ↓
+                       CONNECTIONS
+                            │
+                            ↓
+                      NEW QUESTIONS
+                            │
+                            └──────────────→
 ```
-Curiosity
-    ↓
-Understanding
-    ↓
-Explanation
-    ↓
-Creation of 1 module
-```
 
-The goal is not collecting notes.
+One question generates another.
 
-The goal is building a personal intelligence system that turns your knowledge into a structured Atlas of Information. Automating publishing, setting reminders, checking modules for issues and streamlining notes.
+One experiment connects two fields.
+
+One paper changes the mental model.
+
+One failed implementation exposes an assumption.
+
+And gradually, the map becomes larger.
 
 ---
 
-# Example Project
+# What This Is Not
 
-Completed Module Structure:
+This is not intended to be:
 
-![alt text](images/image.png)
+* a textbook
+* a complete ML curriculum
+* a neuroscience encyclopedia
+* a collection of random notes
+* a collection of AI-generated summaries
+* a claim that we already understand intelligence
 
-Website Index:
+It is an **ongoing investigation**.
 
-![alt text](images/image-1.png)
-
-Blog page with Simulations (embedding knowledge needed):
-
-![alt text](images/image-2.png)
-
-Simulation Page:
-
-![alt text](images/image-3.png)
-
-
-Generated posts:
-[posts.md](modules/gradient-descent/generated/posts.md)
-
-Generated Quiz:
-[quiz.md](modules/gradient-descent/generated/quiz.md)
-
-Generated images:
-![linkedln image](modules/gradient-descent/assets/gradient-descent_linkedin_1.png)
-
-Generated Instagram:
-[instagram.md](modules/gradient-descent/generated/instagram.md)
-
-A demonstration of Atlas converting a research topic into:
-
-- Structured knowledge
-- Interactive simulations
-- Website content
-- Social media artifacts
+The objective is understanding, not completeness.
 
 ---
 
 # Status
 
-Atlas is currently in active development.
+🚧 **Beginning / long-term project**
 
-Version: v1.0
+The repository is currently mostly a foundation for future work.
 
-The core pipeline is functional:
-- Knowledge modules
-- AI research generation
-- Simulation framework
-- Website generation
-- Content generation
-- Publishing automation
+The substantive content will be developed gradually over the coming academic semester.
 
-## Future
+The structure will probably change.
 
-- Improved knowledge graphs
-- Better semantic search
-- Automated knowledge connections
-- Automated simulation making for complicated models
+The questions will change.
 
----
+Some modules will disappear.
 
-# License
+New ones will appear.
 
-MIT License
+That's expected.
+
+> **The Atlas is being built while the territory is being explored.**
 
 ---
 
-# Contact
+# The Big Question
 
-parshatwork@gmail.com
+Everything eventually comes back here:
+
+> **What is intelligence?**
+
+Maybe intelligence is a collection of mechanisms.
+
+Maybe it is an emergent property of interacting systems.
+
+Maybe biological intelligence and artificial intelligence share deeper principles.
+
+Maybe they don't.
+
+Maybe memory is essential.
+
+Maybe prediction is fundamental.
+
+Maybe intelligence is inseparable from interaction with an environment.
+
+Maybe we're asking the wrong question entirely.
+
+I don't know yet.
+
+**That's what this project is for.**
+
+---
+
+## One Question at a Time.
+
+**Mathematics → Computation → Experiment → Neuroscience → Research → Connection**
+
+And eventually:
+
+**a map of what we know, what we think we know, and what we still don't understand.**
